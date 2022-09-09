@@ -1,8 +1,8 @@
 /**************************************************************
 * Class:  CSC-415-0# Summer 2021
-* Name: Robert Bierman
-* Student ID: 
-* GitHub Name: bierman
+* Name: Jiayi Gu
+* Student ID: 920024739
+* GitHub Name: Jiayi079
 * Project: Assignment 2 – Command Line Arguments
 *
 * File: assignment2.h
@@ -11,6 +11,8 @@
 *
 **************************************************************/
 
+
+// this is a stucture called personalInfo
 #ifdef USEDECIMAL
 #define KNOWLEDGE_OF_C				1
 #define KNOWLEDGE_OF_JAVA			2
@@ -82,7 +84,10 @@ typedef struct personalInfo
     char message[100];
     } personalInfo;
     
+
+// buffer size to transform byte data into vlock data
 #define BLOCK_SIZE					256
+
 
 int writePersonalInfo (personalInfo * pi);  //Write your personal info structure
 const char * getNext(void);					//Get the next line to buffer write
